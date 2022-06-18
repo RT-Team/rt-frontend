@@ -51,7 +51,6 @@
             "https://discord.com/api/oauth2/authorize?client_id=716496407212589087&permissions=8&redirect_uri=https%3A%2F%2Frt-bot.com&response_type=code&scope=bot%20applications.commands",
             "導入する", "Invite"
           ) ^^
-        <!--
           ^^ self.menuItem(
             "/api/account/login", "ログイン", "Login"
           ).replace("m", "m login").replace("hidden", 'id="login" hidden') ^^
@@ -62,16 +61,12 @@
               <a href="/api/account/logout">Log out</a>
             </div>
           </span>
--->
         </div>
       </label>
     </header>
     ^^
     if isinstance(content, str):
-      return """<h1>重要なお知らせ</h1>
-      RTの無料提供は終了しました。<br>
-      今年の夏頃(できれば)に有料版を提供する予定です。<br>
-      詳しくはサポートサーバーのお知らせの上の方をご覧ください。"""
+      return content
     else: return content[0]
     ^^
     <footer>
