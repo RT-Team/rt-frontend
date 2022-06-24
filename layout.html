@@ -50,7 +50,7 @@
           ^^ self.menuItem(
             "https://discord.com/api/oauth2/authorize?client_id=716496407212589087&permissions=1642824461687&scope=bot%20applications.commands",
             "導入する", "Invite"
-          ) ^^
+          ).replace("hidden", 'target="_blank" hidden') ^^
           ^^ self.menuItem(
             "/api/account/login", "ログイン", "Login"
           ).replace("m", "m login").replace("hidden", 'id="login" hidden') ^^
